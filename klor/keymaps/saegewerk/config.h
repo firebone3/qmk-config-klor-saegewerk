@@ -1,10 +1,5 @@
 #pragma once
 
-/* The way how "handedness" is decided (which half is which),
-see https://docs.qmk.fm/#/feature_split_keyboard?id=setting-handedness
-for more options.
-*/
-
 #define MASTER_LEFT
 // #define MASTER_RIGHT
 
@@ -25,8 +20,18 @@ for more options.
 //#define NO_ACTION_TAPPING
 //#define NO_MUSIC_MODE
 
+#define SPLIT_OLED_ENABLE
+#define SPLIT_ACTIVITY_ENABLE
+#define SPLIT_MODS_ENABLE
+#define OLED_TIMEOUT 15000
+
 #define COMBO_COUNT 1
 
+#define AUDIO_CLICKY
+//#define AUDIO_CLICKY_FREQ_RANDOMNESS 1.0f
+
+#    define DRIVER_LED_TOTAL 36 // Number of LEDs
+#    define RGB_MATRIX_SPLIT { 18, 18 }
 
 // RGB matrix support
 #ifdef RGB_MATRIX_ENABLE

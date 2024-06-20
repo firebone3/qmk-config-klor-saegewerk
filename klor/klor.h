@@ -101,5 +101,3 @@
         { ___,   R34,   R33,   R32,   ___,   R30 }, \
     }
 
-
-#define LAYOUT LAYOUT_polydactyl

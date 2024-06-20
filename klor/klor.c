@@ -33,6 +33,7 @@ oled_rotation_t oled_init_kb(oled_rotation_t rotation) {
 __attribute__ ((weak))
 const keypos_t PROGMEM hand_swap_config[MATRIX_ROWS][MATRIX_COLS] =
 
+
 /*  ORIGINAL LAYOUT
 {  // LEFT 
  { {0, 0}, {1, 0}, {2, 0}, {3, 0}, {4, 0}, {5, 0} }, \
@@ -46,6 +47,7 @@ const keypos_t PROGMEM hand_swap_config[MATRIX_ROWS][MATRIX_COLS] =
  { {0, 7}, {1, 7}, {2, 7}, {3, 7}, {4, 7}, {5, 7} }, \
 };
 */
+
 
 //  MIRRORED LAYOUT
 {  // LEFT 
@@ -94,7 +96,7 @@ const keypos_t PROGMEM hand_swap_config[MATRIX_ROWS][MATRIX_COLS] =
 //    X │ 09  02  01  00 │ X    X │ 21  22  23  30 │ X   3
 //      └────────────────┘        └────────────────┘
 
-
+/*
 // POLYDACTYL / YUBITSUME 
 // use this matrix if you use the polydactyl or yubitsume layout ────────────────────────────────────┐
 
@@ -134,7 +136,7 @@ led_config_t g_led_config = { {
     4, 4, 4, 4, 4, 1, 1
 } };
 // ────────────────────────────────────────────────────────────────────────────────────────────────────┘
-
+*/
 
 /*
 // KONRAD
@@ -179,7 +181,6 @@ led_config_t g_led_config = { {
 // ────────────────────────────────────────────────────────────────────────────────────────────────────┘
 */
 
-/*
 // SAEGEWERK
 // use this matrix if you use the saegewerk layout ────────────────────────────────────────────────────┐
 
@@ -220,17 +221,15 @@ led_config_t g_led_config = { {
 } };
 
 // ────────────────────────────────────────────────────────────────────────────────────────────────────┘
-*/
 
 void suspend_power_down_kb(void) {
-    rgb_matrix_set_suspend_state(true);
-    suspend_power_down_user();
+    rgb_matrix_set_suspend_state(true);    
 }
 
 void suspend_wakeup_init_kb(void) {
-    rgb_matrix_set_suspend_state(false);
-    suspend_wakeup_init_user();
+    rgb_matrix_set_suspend_state(false);    
 }
+
 #endif //RGB_MATRIX_ENABLE
 
 
