@@ -44,3 +44,8 @@ Than you can use this command to compile the RP2040 firmware for the KLOR.
 - Add custom LED animation
 - Add OLED animation
 - Make the haptic feedback work on the peripheral side
+
+
+## firmware explanation
+
+only the saegewerk keymap modified and fixed an issue where the per key LED position did not match
