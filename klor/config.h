@@ -17,6 +17,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define VENDOR_ID       0x3A3C
+#define PRODUCT_ID      0x0001
+#define DEVICE_VER      0x0103 
+#define MANUFACTURER    "GEIST"
+
+#endif
+
 // ┌─────────────────────────────────────────────────┐
 // │ k e y   m a t r i x                             │
 // └─────────────────────────────────────────────────┘ 
